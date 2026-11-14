@@ -23,7 +23,7 @@ Live Demo: YOUR_LIVE_URL
 
 1. Get a free API key from https://aistudio.google.com/
 2. Clone this repo:
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git clone https://github.com/rayhanbasicai-netizen/EduGenius-AI.git
 3. Open index.html in your browser
 4. Go to Settings, paste your API key, and click Save
 
