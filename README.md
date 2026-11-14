@@ -2,7 +2,7 @@
 
 EduGenius AI is an AI-powered learning platform for Bangladeshi students. It works in Bengali and English and uses Google AI Studio (Gemini) to explain topics, create quizzes, and answer questions.
 
-Live Demo: YOUR_LIVE_URL
+Live Demo: https://ai.studio/apps/fdd9c4a1-908b-4ae9-bb6f-9b2562f464fd
 
 **Features**
 
