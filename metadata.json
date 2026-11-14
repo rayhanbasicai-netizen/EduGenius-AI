@@ -1,0 +1,6 @@
+{
+  "name": "EduGenius AI",
+  "description": "AI-powered bilingual learning platform for Bangladeshi students (Class 6-12, SSC, HSC, University, Admission, IELTS, and Job exams) by Apex Edutech Labs Inc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

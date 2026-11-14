@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Noto Sans Bengali", "Inter", system-ui, -apple-system, sans-serif;
+    --font-display: "Plus Jakarta Sans", "Noto Sans Bengali", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #1E1B4B;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.hero-animated-bg {
+  background: linear-gradient(125deg, #1E1B4B 0%, #272162 40%, #312E81 70%, #1E1B4B 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 16s ease infinite;
+}
+
+.float-slow {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+.float-delayed {
+  animation: gentleFloat 7.5s ease-in-out 1.5s infinite;
+}
+
+.typing-dot-1 {
+  animation: typingBounce 1.2s ease-in-out infinite;
+}
+
+.typing-dot-2 {
+  animation: typingBounce 1.2s ease-in-out 0.2s infinite;
+}
+
+.typing-dot-3 {
+  animation: typingBounce 1.2s ease-in-out 0.4s infinite;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animated-bg,
+  .float-slow,
+  .float-delayed,
+  .typing-dot-1,
+  .typing-dot-2,
+  .typing-dot-3 {
+    animation: none !important;
+  }
+}
